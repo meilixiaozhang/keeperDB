@@ -22,4 +22,12 @@ router.get("/api/name", function (req, res) {
   res.json(data);
 });
 
+router.post("/save", function (req, res) {
+  console.log("Body: ", req.body);
+
+  res.json({
+    msg: "we received the data.",
+  });
+});
+
 module.exports = router;
