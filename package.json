@@ -5,9 +5,9 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
+    "start": "nodemon server.js",
     "keeper": "cd keeper && npm start",
-    "dev": "concurrently \"nodemon server.js\" \"npm run keeper\""
+    "dev": "concurrently \"npm start\" \"npm run keeper\""
   },
   "keywords": [],
   "author": "",
